@@ -132,7 +132,8 @@ document.getElementById("buyBtn").addEventListener("click", function () {
   } else if (emailId == "") {
     alert("Enter your Email Address");
   } else if (selectedSeat > 0) {
-    location.href = "../ticketConfirm.html";
+    removeClassById("confirmModal", "hidden");
+    addClassById("confirmModal", "flex");
   } else {
     alert("select at least 1 seat");
   }

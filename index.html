@@ -51,7 +51,7 @@
       };
     </script>
   </head>
-  <body class="font-text_raleway text-color_dark">
+  <body class="font-text_raleway text-color_dark relative">
     <!-- header part  -->
     <header>
       <!-- navbar section -->
@@ -752,6 +752,36 @@
         </div>
       </div>
     </footer>
+    <!-- confirm Modal  -->
+
+    <div
+      id="confirmModal"
+      class="bg-color_third/30 w-full top-0 left-0 fixed justify-center items-center min-h-screen font-textmedium hidden"
+    >
+      <div
+        class="bg-color_white rounded-xl shadow-xl py-10 sm:py-20 px-10 sm:px-20 flex flex-col items-center"
+      >
+        <img src="./images/success.png" alt="" />
+        <h2 class="pt-6 font-bold text-2xl text-green-300">SUCCESS</h2>
+        <p class="pt-3 text-xl font-semibold text-center">
+          Thank you for Booking Our Bus Seats.
+        </p>
+        <p class="text-xl font-semibold text-center">
+          We are working hard to find the best service and deals for you
+        </p>
+        <span class="pt-3 text-lg text-center"
+          >Shortly you will find a confirmation in your email.</span
+        >
+        <div class="text-center pt-5">
+          <a
+            href="./index.html"
+            class="py-3 px-10 rounded-xl bg-[green] text-color_white text-lg font-semibold inline-block"
+          >
+            Confirm
+          </a>
+        </div>
+      </div>
+    </div>
     <!-- javascript start  -->
     <script src="./script/utility.js"></script>
     <script src="./script/nav.js"></script>

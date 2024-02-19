@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,6 +30,7 @@
             color_primary: "#1DD100",
             color_rare: "#FFBF0F",
             color_secondary: "#F78C9C",
+            color_third: "#F7F8F8",
             color_dark: "#030712",
             color_dark80: "#030712CC",
             color_dark70: "#030712B3",
@@ -78,15 +79,16 @@
               <li
                 class="text-lg md:text-xl lg:text-2xl font-semibold text-color_primary"
               >
-                <button
-                  class="py-1 sm:py-2 px-3 sm:px-5 rounded-md bg-color_primary/10 border-2 border-color_primary/30"
+                <a
+                  href="#paribahan"
+                  class="py-1 sm:py-2 px-3 sm:px-5 rounded-md bg-color_primary/10 border-2 border-color_primary/30 inline-block"
                 >
                   Bus<img
                     class="inline-block pl-1"
                     src="./images/bus-icon.png"
                     alt=""
                   />
-                </button>
+                </a>
               </li>
               <li id="navHambarger" class="md:hidden text-3xl cursor-pointer">
                 <i class="fa-solid fa-bars"></i>
@@ -132,11 +134,12 @@
               Yes, you can run unit tests and view the results directly within
               the app. The integrated testing features allow for a streamlined .
             </p>
-            <button
-              class="font-bold text-xl bg-color_primary py-3 px-5 rounded-lg mt-10 mb-3 md:mb-8 border-none"
+            <a
+              href="#paribahan"
+              class="font-bold text-xl bg-color_primary py-3 px-5 rounded-lg mt-10 mb-3 md:mb-8 border-none cursor-pointer inline-block"
             >
               Buy Tickets
-            </button>
+            </a>
             <!-- banner bottom card  -->
 
             <div
@@ -262,11 +265,456 @@
           </div>
         </div>
       </section>
+      <!-- paribahan section  -->
+      <section
+        id="paribahan"
+        class="border-t-4 border-color_primary mt-10 pb-20 rounded-t-[60px] bg-color_third"
+      >
+        <div class="container">
+          <div>
+            <h3 class="font-bold text-4xl pt-16 text-center">
+              Prisa Paribahan
+            </h3>
+            <p
+              class="text-lg font-text_inter text-color_dark60 max-w-[736px] mx-auto text-center pt-6 pb-8"
+            >
+              Yes, you can run unit tests and view the results directly within
+              the app. The integrated testing features allow for a streamlined .
+            </p>
+            <!-- paribahan main part  -->
+            <div>
+              <!-- main part first  -->
+              <div
+                class="flex flex-col md:flex-row bg-color_white py-7 rounded-xl"
+              >
+                <div class="flex-1">
+                  <!-- first part  -->
+                  <div class="flex justify-between px-6 pb-7 items-center">
+                    <div class="flex gap-4 items-center">
+                      <span><img src="./images/bus-logo.png" alt="" /></span>
+                      <ul>
+                        <li class="font-bold text-[25px] md:text-[32px]">
+                          Greenline Paribahan
+                        </li>
+                        <li class="text-lg font-text_inter text-color_dark60">
+                          Coach-009-WEB ! AC_Business
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p
+                        class="text-lg text-color_primary bg-color_primary/15 py-2 px-4 rounded-lg"
+                      >
+                        <img
+                          class="inline-block pr-2"
+                          src="./images/seat-green.png"
+                          alt=""
+                        /><span id="availableSeatCount" class="pr-2">15</span
+                        >Seats left
+                      </p>
+                    </div>
+                  </div>
+                  <!-- second part  -->
+                  <div class="bg-color_third mx-5 px-2 rounded-xl">
+                    <ul
+                      class="flex justify-between py-3 px-3 border-b-2 border-color_dark/20 border-dashed"
+                    >
+                      <li>Route</li>
+                      <li>Dhaka - Sylhet</li>
+                    </ul>
+                    <ul
+                      class="flex justify-between py-3 px-3 border-b-2 border-color_dark/20 border-dashed"
+                    >
+                      <li>Departure Time</li>
+                      <li>9:00 PM</li>
+                    </ul>
+                    <ul class="flex justify-around py-5 px-3">
+                      <li
+                        class="bg-color_dark/5 py-2 px-5 rounded-lg font-medium"
+                      >
+                        Boarding Point - Laxmipur
+                      </li>
+                      <li
+                        class="bg-color_dark/5 py-2 px-5 rounded-lg font-medium"
+                      >
+                        Dropping Point - Bogura
+                      </li>
+                      <li
+                        class="bg-color_dark/5 py-2 px-5 rounded-lg font-medium"
+                      >
+                        Est. Time - 11 Hour
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="w-full md:w-1/4 border-l-2 border-color_primary border-dashed flex justify-center items-center flex-col relative"
+                >
+                  <img src="./images/fare.png" alt="" />
+                  <h5 class="font-bold text-3xl pt-3">550 Taka</h5>
+                  <span class="font-semibold text-2xl text-color_dark60"
+                    >Per Seat</span
+                  >
+                  <div
+                    class="w-[50px] h-[50px] bg-color_third rounded-full absolute top-0 left-0 -translate-x-1/2 -translate-y-full hidden md:block"
+                  ></div>
+                  <div
+                    class="w-[50px] h-[50px] bg-color_third rounded-full absolute bottom-0 left-0 -translate-x-1/2 translate-y-full hidden md:block"
+                  ></div>
+                </div>
+              </div>
+              <!-- paribahan form part  -->
+              <div class="bg-color_white mt-5 rounded-xl">
+                <div class="flex flex-col md:flex-row">
+                  <!-- ticket left side  -->
+                  <div class="flex-1 p-5">
+                    <div class="pl-4">
+                      <h4
+                        class="font-semibold text-2xl border-b-2 border-color_primary border-dashed pb-3"
+                      >
+                        Select Your Seat
+                      </h4>
+                      <ul
+                        class="flex justify-between items-center border-b-2 border-color_primary border-dashed"
+                      >
+                        <li
+                          class="font-medium text-lg pb-3 pt-4 text-color_dark50"
+                        >
+                          <img
+                            class="inline-block pr-1"
+                            src="./images/seat-gray.png"
+                            alt=""
+                          />
+                          Available
+                        </li>
+                        <li
+                          class="font-medium text-lg pb-3 pt-4 text-color_dark50"
+                        >
+                          <img
+                            class="inline-block pr-1"
+                            src="./images/seat-green-filled.png"
+                            alt=""
+                          />
+                          Selected
+                        </li>
+                      </ul>
+                      <ul class="flex justify-end py-5">
+                        <li class="py-3 px-10 bg-color_dark/10 rounded-lg">
+                          <img src="./images/wheel.png" alt="" />
+                        </li>
+                      </ul>
+                      <div>
+                        <!-- row A  -->
+                        <ul class="flex justify-around py-4 gap-2">
+                          <li
+                            class="py-2 px-3 md:px-6 bg-color_dark/50 text-color_white rounded-lg"
+                          >
+                            A
+                          </li>
+                          <li
+                            class="bus_seat py-2 md:py-3 px-5 md:px-7 lg:px-10 bg-color_third rounded-lg cursor-pointer"
+                            id="A1"
+                          >
+                            A1
+                          </li>
+                          <li
+                            class="bus_seat py-2 md:py-3 px-5 md:px-7 lg:px-10 bg-color_third rounded-lg cursor-pointer"
+                            id="A2"
+                          >
+                            A2
+                          </li>
+                          <li
+                            class="bus_seat py-2 md:py-3 px-5 md:px-7 lg:px-10 bg-color_third rounded-lg cursor-pointer"
+                            id="A3"
+                          >
+                            A3
+                          </li>
+                          <li
+                            class="bus_seat py-2 md:py-3 px-5 md:px-7 lg:px-10 bg-color_third rounded-lg cursor-pointer"
+                            id="A4"
+                          >
+                            A4
+                          </li>
+                        </ul>
+                        <!-- row B  -->
+                        <ul class="flex justify-around py-4">
+                          <li
+                            class="py-2 px-3 md:px-6 bg-color_dark/50 text-color_white rounded-lg"
+                          >
+                            B
+                          </li>
+                          <li
+                            class="bus_seat py-2 md:py-3 px-5 md:px-7 lg:px-10 bg-color_third rounded-lg cursor-pointer"
+                            id="B1"
+                          >
+                            B1
+                          </li>
+                          <li
+                            class="bus_seat py-2 md:py-3 px-5 md:px-7 lg:px-10 bg-color_third rounded-lg cursor-pointer"
+                            id="B2"
+                          >
+                            B2
+                          </li>
+                          <li
+                            class="bus_seat py-2 md:py-3 px-5 md:px-7 lg:px-10 bg-color_third rounded-lg cursor-pointer"
+                            id="B3"
+                          >
+                            B3
+                          </li>
+                          <li
+                            class="bus_seat py-2 md:py-3 px-5 md:px-7 lg:px-10 bg-color_third rounded-lg cursor-pointer"
+                            id="B4"
+                          >
+                            B4
+                          </li>
+                        </ul>
+                        <!-- row C  -->
+                        <ul class="flex justify-around py-4">
+                          <li
+                            class="py-2 px-3 md:px-6 bg-color_dark/50 text-color_white rounded-lg"
+                          >
+                            C
+                          </li>
+                          <li
+                            class="bus_seat py-2 md:py-3 px-5 md:px-7 lg:px-10 bg-color_third rounded-lg cursor-pointer"
+                            id="C1"
+                          >
+                            C1
+                          </li>
+                          <li
+                            class="bus_seat py-2 md:py-3 px-5 md:px-7 lg:px-10 bg-color_third rounded-lg cursor-pointer"
+                            id="C2"
+                          >
+                            C2
+                          </li>
+                          <li
+                            class="bus_seat py-2 md:py-3 px-5 md:px-7 lg:px-10 bg-color_third rounded-lg cursor-pointer"
+                            id="C3"
+                          >
+                            C3
+                          </li>
+                          <li
+                            class="bus_seat py-2 md:py-3 px-5 md:px-7 lg:px-10 bg-color_third rounded-lg cursor-pointer"
+                            id="C4"
+                          >
+                            C4
+                          </li>
+                        </ul>
+                        <!-- row D  -->
+                        <ul class="flex justify-around py-4">
+                          <li
+                            class="py-2 px-3 md:px-6 bg-color_dark/50 text-color_white rounded-lg"
+                          >
+                            D
+                          </li>
+                          <li
+                            class="bus_seat py-2 md:py-3 px-5 md:px-7 lg:px-10 bg-color_third rounded-lg cursor-pointer"
+                            id="D1"
+                          >
+                            D1
+                          </li>
+                          <li
+                            class="bus_seat py-2 md:py-3 px-5 md:px-7 lg:px-10 bg-color_third rounded-lg cursor-pointer"
+                            id="D2"
+                          >
+                            D2
+                          </li>
+                          <li
+                            class="bus_seat py-2 md:py-3 px-5 md:px-7 lg:px-10 bg-color_third rounded-lg cursor-pointer"
+                            id="D3"
+                          >
+                            D3
+                          </li>
+                          <li
+                            class="bus_seat py-2 md:py-3 px-5 md:px-7 lg:px-10 bg-color_third rounded-lg cursor-pointer"
+                            id="D4"
+                          >
+                            D4
+                          </li>
+                        </ul>
+                        <!-- row E  -->
+                        <ul class="flex justify-around py-4">
+                          <li
+                            class="py-2 px-3 md:px-6 bg-color_dark/50 text-color_white rounded-lg"
+                          >
+                            E
+                          </li>
+                          <li
+                            class="bus_seat py-2 md:py-3 px-5 md:px-7 lg:px-10 bg-color_third rounded-lg cursor-pointer"
+                            id="E1"
+                          >
+                            E1
+                          </li>
+                          <li
+                            class="bus_seat py-2 md:py-3 px-5 md:px-7 lg:px-10 bg-color_third rounded-lg cursor-pointer"
+                            id="E2"
+                          >
+                            E2
+                          </li>
+                          <li
+                            class="bus_seat py-2 md:py-3 px-5 md:px-7 lg:px-10 bg-color_third rounded-lg cursor-pointer"
+                            id="E3"
+                          >
+                            E3
+                          </li>
+                          <li
+                            class="bus_seat py-2 md:py-3 px-5 md:px-7 lg:px-10 bg-color_third rounded-lg cursor-pointer"
+                            id="E4"
+                          >
+                            E4
+                          </li>
+                        </ul>
+                        <!-- ul>li.seat#A$*4{A$} -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ticket right side  -->
+                  <div
+                    class="w-full md:w-2/5 border-l-2 border-color_primary border-dashed px-3 my-5"
+                  >
+                    <h4
+                      class="font-semibold text-2xl border-b-2 border-color_primary border-dashed pb-3 px-2"
+                    >
+                      Give Information Here
+                    </h4>
+                    <div class="bg-color_third py-4 mt-6 px-10 rounded-xl">
+                      <ul
+                        class="flex justify-between border-b-2 border-color_primary/70 border-dashed pb-4 mb-3"
+                      >
+                        <li class="font-semibold text-lg font-text_inter">
+                          Seat<span
+                            id="selectSeatCount"
+                            class="bg-color_primary text-color_white ml-1 py-1 px-2 rounded-full text-sm font-medium"
+                            >0</span
+                          >
+                        </li>
+                        <li class="font-semibold text-lg font-text_inter">
+                          Class
+                        </li>
+                        <li class="font-semibold text-lg font-text_inter">
+                          Price
+                        </li>
+                      </ul>
+
+                      <!-- dynamic value  -->
+                      <div id="clickedSeatDetails">
+                        <!-- <ul class="flex justify-between py-1">
+                          <li>C2</li>
+                          <li>Economoy</li>
+                          <li>550</li>
+                        </ul>
+                         -->
+                      </div>
+                      <!-- total price  -->
+                      <ul
+                        class="flex justify-between border-t-2 border-color_primary border-dashed mt-3 pt-2"
+                      >
+                        <li class="font-semibold">Total Price</li>
+                        <li class="font-semibold">
+                          BDT <span id="totalPrice">0</span>
+                        </li>
+                      </ul>
+                      <!-- discount part  -->
+                      <ul
+                        id="discountBox"
+                        class="justify-between mt-3 pt-2 hidden"
+                      >
+                        <li class="font-semibold text-color_dark/60">
+                          Discount
+                        </li>
+                        <li class="font-semibold text-color_dark/60">
+                          BDT <span id="discountValue">0</span>
+                        </li>
+                      </ul>
+
+                      <!-- coupon part  -->
+                      <div id="couponInputBox" class="py-5 relative">
+                        <input
+                          id="couponInput"
+                          class="w-full py-3 pl-4 text-lg outline-none rounded-lg border-2 border-color_primary/40"
+                          type="text"
+                          placeholder="coupon"
+                        />
+                        <button
+                          id="couponBtn"
+                          class="bg-color_primary text-lg font-semibold py-3 px-6 rounded-lg text-color_white absolute right-0 disabled:opacity-10"
+                        >
+                          Apply
+                        </button>
+                      </div>
+                      <!-- grand total part  -->
+                      <ul class="flex justify-between mt-2 pt-2">
+                        <li class="font-semibold">Grand Total</li>
+                        <li class="font-semibold">
+                          BDT <span id="grandTotal">0</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- passenger information by input field part  -->
+                    <form action="" class="flex flex-col pt-5 px-4">
+                      <label class="font-semibold text-lg" for="passenger"
+                        >Passenger Name</label
+                      >
+                      <input
+                        id="fullName"
+                        class="mt-2 py-3 pl-4 text-lg outline-none border border-color_dark/40 rounded-lg"
+                        name="passenger"
+                        type="text"
+                        placeholder="Enter your name"
+                      />
+                      <label
+                        class="font-semibold text-lg inline-block pt-5"
+                        for="number"
+                        >Phone Number</label
+                      >
+                      <input
+                        id="phoneNumber"
+                        class="mt-2 py-3 pl-4 text-lg outline-none border border-color_dark/40 rounded-lg"
+                        name="number"
+                        type="number"
+                        placeholder="Enter your number"
+                      />
+                      <label
+                        class="font-semibold text-lg inline-block pt-5"
+                        for="email"
+                        >Email ID</label
+                      >
+                      <input
+                        id="emailId"
+                        class="mt-2 py-3 pl-4 text-lg outline-none border border-color_dark/40 rounded-lg"
+                        name="email"
+                        type="email"
+                        placeholder="Enter your email"
+                      />
+                      <button
+                        id="buyBtn"
+                        class="py-4 text-xl font-bold bg-color_primary rounded-lg w-full mt-5 text-color_white"
+                      >
+                        Buy
+                      </button>
+                    </form>
+                    <!-- terms and policy part  -->
+                    <ul class="flex justify-around pt-5">
+                      <li class="text-color_dark/60 font-text_inter underline">
+                        Terms and Conditions
+                      </li>
+                      <li class="text-color_dark/60 font-text_inter underline">
+                        Cancellation Policy
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- footer part  -->
-    <footer class="py-24"></footer>
+    <footer class="py-24 bg-color_dark"></footer>
     <!-- javascript start  -->
     <script src="./script/utility.js"></script>
     <script src="./script/nav.js"></script>
+    <script src="./script/ticketSell.js"></script>
   </body>
 </html>

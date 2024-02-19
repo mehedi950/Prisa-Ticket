@@ -56,15 +56,6 @@ for (let seat of seats) {
       }
     }
     console.log(clickedSeatArry);
-
-    // if (clickedSeatArry.length <= 4) {
-    //   for (let clickSeat of clickedSeatArry) {
-    //     removeClassById(clickSeat, "bg-color_third");
-    //     addClassById(clickSeat, "bg-color_primary");
-    //   }
-    // } else {
-    //   alert("You reached the max limit 4");
-    // }
   });
 }
 

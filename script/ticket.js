@@ -1,12 +1,25 @@
-//coupon disabled
-addAttributeById("couponInput", "disabled", "");
-addAttributeById("couponBtn", "disabled", "");
+// show hambarger menu
+document.getElementById("navHambarger").addEventListener("click", function () {
+  addClassById("navHambarger", "hidden");
+  removeClassById("navHambargerCross", "hidden");
+  removeClassById("hambargerMenu", "opacity-0");
+});
 
-//do empty all input when page reload
+// hide hambarger menu
+document
+  .getElementById("navHambargerCross")
+  .addEventListener("click", function () {
+    removeClassById("navHambarger", "hidden");
+    addClassById("navHambargerCross", "hidden");
+    addClassById("hambargerMenu", "opacity-0");
+  });
+
 addValueById("fullName", "");
 addValueById("phoneNumber", "");
 addValueById("emailId", "");
 addValueById("couponInput", "");
+addAttributeById("couponInput", "disabled", "");
+addAttributeById("couponBtn", "disabled", "");
 
 let seats = document.getElementsByClassName("bus_seat");
 let clickedSeatArry = [];
@@ -22,37 +35,30 @@ for (let seat of seats) {
       if (clickedSeatArry.length < 4) {
         // set clicked seat as array list
         clickedSeatArry.push(clickSeatFirst);
-
         //change the selected seat background color
         for (let clickSeat of clickedSeatArry) {
           removeClassById(clickSeat, "bg-color_third");
           addClassById(clickSeat, "bg-color_primary");
         }
-
-        //decrease avail seat count
-        let currentSeat = parseInt(getElementTextById("availableSeatCount"));
-        let availSeat = currentSeat - 1;
-
-        // set the avail seat
-        setElementTextById("availableSeatCount", availSeat);
-
-        // set selected seat count
-        setElementTextById("selectSeatCount", clickedSeatArry.length);
-
-        // set selected seat details
-        updateClickedSeatDetails();
-
         // total price
         let totalPrice = clickedSeatArry.length * 550;
         setElementTextById("totalPrice", totalPrice);
-
+        //decrease avail seat count
+        let currentSeat = parseInt(getElementTextById("availableSeatCount"));
+        let availSeat = currentSeat - 1;
+        // set selected seat details
+        updateClickedSeatDetails();
+        // set the avail seat
+        setElementTextById("availableSeatCount", availSeat);
         // grand total price
         setElementTextById("grandTotal", totalPrice);
+        // set selected seat count
+        setElementTextById("selectSeatCount", clickedSeatArry.length);
 
         //remove disabled from coupon when 4 seat is selected
         removeCouponDisabled();
       } else {
-        alert("You have reached the max limit");
+        alert("You can't select over 4 seat");
       }
     }
     console.log(clickedSeatArry);
